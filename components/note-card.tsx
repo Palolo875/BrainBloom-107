@@ -9,13 +9,15 @@ interface NoteCardProps {
   note: Note
   onClick: () => void
   className?: string
+  style?: React.CSSProperties
 }
 
-export function NoteCard({ note, onClick, className }: NoteCardProps) {
+export function NoteCard({ note, onClick, className, style }: NoteCardProps) {
   return (
     <SoftUICard
       className={`p-6 space-y-3 animate-in slide-in-from-bottom-4 fade-in duration-500 ${className}`}
       onClick={onClick}
+      style={style}
     >
       <h3 className="font-serif text-lg font-semibold text-foreground text-balance">{note.title}</h3>
 

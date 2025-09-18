@@ -9,9 +9,10 @@ interface SoftUICardProps {
   pressed?: boolean
   hoverable?: boolean
   onClick?: () => void
+  style?: React.CSSProperties
 }
 
-export function SoftUICard({ children, className, pressed = false, hoverable = true, onClick }: SoftUICardProps) {
+export function SoftUICard({ children, className, pressed = false, hoverable = true, onClick, style }: SoftUICardProps) {
   return (
     <div
       className={cn(
@@ -22,6 +23,7 @@ export function SoftUICard({ children, className, pressed = false, hoverable = t
         className,
       )}
       onClick={onClick}
+      style={style}
     >
       {children}
     </div>
