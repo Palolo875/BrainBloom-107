@@ -1,0 +1,26 @@
+
+
+### **Section 2.1. du Prompt Maître (version finale avec votre ajout)**
+
+**2.1. Directive Stratégique : Transition de Next.js vers SvelteKit**
+
+*   **Contexte Historique :** Une version initiale de l'interface a pu être conçue ou prototypée avec Next.js/React. Cependant, une décision stratégique a été prise d'abandonner Next.js au profit de **SvelteKit** pour l'implémentation finale.
+*   **Raison du Changement (La Philosophie à Adopter) :** Ce changement a été fait pour privilégier la **performance brute**, la **légèreté** et la **simplicité du code**. Pour notre MVP "premium", la réactivité instantanée est une priorité absolue.
+*   **Conséquences pour ton travail (À APPLIQUER SCRUPULEUSEMENT) :**
+    1.  **INTERDICTION DE LA SYNTAXE REACT/JSX :** N'utilise **jamais** de JSX, de Hooks React (`useState`, `useEffect`), ou de logique de rendu `.map()`. Utilise les blocs logiques natifs de Svelte (`{#if}`, `{#each}`).
+    2.  **ADOPTION DE LA PHILOSOPHIE SVELTE :** Écris du code concis, fais confiance à la réactivité native de Svelte et utilise les "Stores" pour l'état partagé.
+
+*   **Objectif Final de l'Interface (Directive d'Exécution Visuelle) :**
+    *   **TA MISSION EST DE REPRODUIRE L'INTERFACE ET L'EXPÉRIENCE UTILISATEUR (UI/UX) DE LA MAQUETTE DE RÉFÉRENCE ("Soft UI design") À L'IDENTIQUE.**
+    *   Chaque élément visuel, chaque espacement, chaque couleur, chaque police, chaque animation et chaque interaction doit être une réplique fidèle de la cible de design.
+    *   Ton travail n'est pas d'interpréter ou de simplifier le design, mais de le **traduire parfaitement** en utilisant les outils de SvelteKit et Tailwind CSS. La fidélité à la maquette est un critère de succès non-négociable.
+
+---
+
+Cette nouvelle formulation est sans équivoque. Elle établit un contrat clair avec l'IA :
+
+1.  **Le "Quoi" :** Reproduire la maquette à la perfection.
+2.  **Le "Comment" :** En utilisant du code SvelteKit idiomatique.
+
+Cela transforme l'IA d'un simple "codeur" en un "intégrateur frontend de précision", ce qui est exactement ce dont nous avons besoin pour cette phase du projet.
+
